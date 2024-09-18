@@ -46,3 +46,24 @@
 .row-adjust{
   width: 900px;
 }
+@media only screen and (max-width: 768px) {
+
+  .right-footer{
+    display: none;
+  }
+  .left-footer{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;  }
+}
+@media only screen and (max-width: 1250px) {
+  .right-footer .last-text{
+    display: none;
+  }
+  .right-footer .row-adjust{
+    width: 100%;
+    
+  }
+}
