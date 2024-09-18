@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+:root{
+  --red:#D2153D;
+  --blue:#00215B;
+  --text-color:#41444B;
+}
+@font-face {
+  font-family: Lato;
+  src: url(B:\iti react\iti-course\public\Lato-Bold.ttf);
+}
+@font-face {
+  font-family: kanit;
+  src: url(B:\iti react\iti-course\public\Kanit-Light.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-decoration-none{
+  font-family: "kanit";
+  font-size: 14px;
+  color: var(--text-color);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navlinks{
+  color: var(--blue);
 }
+#basic-nav-dropdown{
+  color: var(--blue);
+}
+.left-footer{
+  background-color: var(--red);
+  height: 300px;
+  padding-left: 100px;
+}
+.right-footer{
+  background-color: var(--blue);
+  height: 300px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.contact-info{
+  color: white;
+  line-height: 2rem;
+}
+.footer-links{
+  padding-bottom:15px ;
+}
+.info-text{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row-adjust{
+  width: 900px;
 }
