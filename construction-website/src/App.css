@@ -1,69 +1,67 @@
-:root{
-  --red:#D2153D;
-  --blue:#00215B;
-  --text-color:#41444B;
+:root {
+  --red: #d2153d;
+  --blue: #00215b;
+  --text-color: #41444b;
 }
 @font-face {
   font-family: Lato;
-  src: url(B:\iti react\iti-course\public\Lato-Bold.ttf);
+  src: url(../public/Lato-Bold.ttf);
 }
 @font-face {
   font-family: kanit;
-  src: url(B:\iti react\iti-course\public\Kanit-Light.ttf);
+  src: url(../public/Kanit-Light.ttf);
 }
 
-.text-decoration-none{
+.text-decoration-none {
   font-family: "kanit";
   font-size: 14px;
   color: var(--text-color);
 }
-.navlinks{
+.navlinks {
   color: var(--blue);
 }
-#basic-nav-dropdown{
+#basic-nav-dropdown {
   color: var(--blue);
 }
-.left-footer{
+.left-footer {
   background-color: var(--red);
   height: 300px;
   padding-left: 100px;
 }
-.right-footer{
+.right-footer {
   background-color: var(--blue);
   height: 300px;
-
 }
-.contact-info{
+.contact-info {
   color: white;
   line-height: 2rem;
 }
-.footer-links{
-  padding-bottom:15px ;
+.footer-links {
+  padding-bottom: 15px;
 }
-.info-text{
+.info-text {
   color: white;
 }
-.row-adjust{
+.row-adjust {
   width: 900px;
 }
 @media only screen and (max-width: 768px) {
-
-  .right-footer{
+  .right-footer {
     display: none;
   }
-  .left-footer{
+  .left-footer {
     width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 40px;  }
+    padding: 40px;
+  }
 }
 @media only screen and (max-width: 1250px) {
-  .right-footer .last-text{
+  .right-footer .last-text {
     display: none;
   }
-  .right-footer .row-adjust{
+  .right-footer .row-adjust {
     width: 100%;
-    
   }
 }
