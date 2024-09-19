@@ -1,13 +1,37 @@
 import "./App.css";
-import Footer from "./components/Footer";
-import Navigation from "./components/Navigation";
+import AboutUs from "./pages/aboutus/AboutUs";
 import Home from "./pages/home/Home";
+import Portfolio from "./pages/PortfolioArchive/Portfolio";
+import Services from "./pages/ServicesArchive/Services";
+import Contacts from "./pages/contacts/Contacts";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>
+  },{
+    path: "aboutus",
+    element: <AboutUs/>
+  },{
+    path: "Portfolio",
+    element: <Portfolio/>
+  },{
+    path: "Services",
+    element: <Services/>
+  },{
+    path: "Contacts",
+    element: <Contacts/>
+  },
+]);
+
 function App() {
   return (
     <>
-      <Navigation />
-      <Home />
-      <Footer />
+     <RouterProvider router={router}/>
     </>
   );
 }
