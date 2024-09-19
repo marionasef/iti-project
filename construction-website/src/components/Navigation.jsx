@@ -1,6 +1,7 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavDropdown } from 'react-bootstrap';
+import { Link } from "react-router-dom"
 
 
 function Navigation() {
@@ -58,18 +59,20 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto fs-5 ">
-            <Nav.Link href="#home" className='navlinks' >Home</Nav.Link>
+            <Nav.Link className='navlinks' ><Link to="/">Home</Link></Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             
             </NavDropdown> 
              <NavDropdown title="Pages" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+             <NavDropdown.Item ><Link to="aboutus">Aboutus</Link></NavDropdown.Item> 
+             <NavDropdown.Item ><Link to="Portfolio">Portfolio </Link></NavDropdown.Item> 
+             <NavDropdown.Item ><Link to="Services">Services </Link></NavDropdown.Item>
             </NavDropdown>  
             <NavDropdown title="News" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#home" className='navlinks pe-0' >Contacts</Nav.Link>
+            <Nav.Link  className='navlinks pe-0' ><Link to="Contacts">Contacts</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       

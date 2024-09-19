@@ -1,9 +1,12 @@
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Navigation from "../../components/Navigation";
+import Footer from "../../components/Footer";
 const Home = () => {
   return (
     <>
+    <Navigation/>
       <section className="heroSection mt-2">
         <div className="container">
           <div className="row align-items-center justify-content-between ">
@@ -137,6 +140,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };
