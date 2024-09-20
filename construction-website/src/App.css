@@ -56,6 +56,7 @@
     flex-direction: column;
     padding: 40px;
   }
+
 }
 @media only screen and (max-width: 1250px) {
   .right-footer .last-text {
@@ -81,8 +82,9 @@
   border-color: var(--red);
   border-top: 5px solid var(--red);
   position: absolute;
-  right: 270px;
-  top: 260px;
+  right: 160px;
+  bottom: -250px;
+  
 }
 .cont-info {
   color: var(--blue);
