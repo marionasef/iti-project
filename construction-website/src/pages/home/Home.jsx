@@ -1,12 +1,17 @@
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faPlusSquare } from "@fortawesome/free-solid-svg-icons";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
+import { Overlay } from "react-bootstrap";
 const Home = () => {
+  const bgColors = {
+    fisrtRed: "#d2153dd9",
+    secondBlue: "#D2153DD9",
+  };
   return (
     <>
-    <Navigation/>
+      <Navigation />
       <section className="heroSection mt-2">
         <div className="container">
           <div className="row align-items-center justify-content-between ">
@@ -140,7 +145,154 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Footer/>
+      <section className="services">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="item-img">
+                <img src={require("../../assets/img.jpg")} alt="" />
+              </div>
+            </div>
+            <div className="col-lg-2">
+              <div className="overlay"></div>
+              <div className="item-text">
+                <h3>Research & Analysis</h3>
+                <p>
+                  Nullam tincidunt libero eu augue eleifend, vitae condimentum
+                  lacus{" "}
+                </p>
+              </div>
+              <div className="item-arrow">
+                <FontAwesomeIcon icon={faArrowRight} />
+              </div>
+              <div className="item-img">
+                <img
+                  src={require("../../assets/industrial-landscape-building-crane-against-the-bl-8T3EXGK.jpg")}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="col-lg-2">
+              <div className="overlay overlay2"></div>
+              <div className="item-text">
+                <h3>Industry Development</h3>
+                <p>
+                  Fusce id hendrerit lectus. Morbi vitae tortor sed turpis
+                  feugiat
+                </p>
+              </div>
+              <div className="item-arrow item-arrow2">
+                <FontAwesomeIcon icon={faArrowRight} />
+              </div>
+              <div className="item-img">
+                <img
+                  src={require("../../assets/crane-and-building-construction-site-on-background-BPZXL3M.jpg")}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="col-lg-2">
+              <div className="overlay"></div>
+              <div className="item-text">
+                <h3>Production Launch</h3>
+                <p>
+                  Nullam tincidunt libero eu augue eleifend, vitae condimentum
+                  lacus
+                </p>
+              </div>
+              <div className="item-arrow">
+                <FontAwesomeIcon icon={faArrowRight} />
+              </div>
+              <div className="item-img">
+                <img
+                  src={require("../../assets/new-build-houses-3HYUECX (1).jpg")}
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="projects">
+        <div className="container">
+          <div className="project-text text-center">
+            <h3>Our Works</h3>
+            <h2>Our Special Projects</h2>
+          </div>
+          <div className="row align-items-center justify-content-center">
+            <div className="col-lg-4 ">
+              <div className="item">
+                <div className="overlay"></div>
+                <div className="item-text ">
+                  <h3>Commercial</h3>
+                  <h2>Benoit Architecture</h2>
+                  <span className="plus">
+                    <FontAwesomeIcon icon={faPlusSquare} className="plus" />
+                  </span>
+                </div>
+                <img src={require("../../assets/proj1.jpg")} alt="" />
+              </div>
+            </div>
+            <div className="col-lg-7 text-center">
+              <div className="row align-items-center justify-content-between">
+                <div className="col-lg-6">
+                  <div className="item">
+                    <div className="overlay"></div>
+                    <div className="item-text ">
+                      <h3>Commercial</h3>
+                      <h2>Benoit Architecture</h2>
+                      <span className="plus">
+                        <FontAwesomeIcon icon={faPlusSquare} className="plus" />
+                      </span>
+                    </div>
+                    <img src={require("../../assets/proj2.jpg")} alt="" />
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <div className="item">
+                    <div className="overlay"></div>
+                    <div className="item-text ">
+                      <h3>Commercial</h3>
+                      <h2>Benoit Architecture</h2>
+                      <span className="plus">
+                        <FontAwesomeIcon icon={faPlusSquare} className="plus" />
+                      </span>
+                    </div>
+                    <img src={require("../../assets/proj3.jpg")} alt="" />
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <div className="item item1 ">
+                    <div className="overlay"></div>
+                    <div className="item-text ">
+                      <h3>Commercial</h3>
+                      <h2>Benoit Architecture</h2>
+                      <span className="plus">
+                        <FontAwesomeIcon icon={faPlusSquare} className="plus" />
+                      </span>
+                    </div>
+                    <img src={require("../../assets/proj4.jpg")} alt="" />
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <div className="item">
+                    <div className="overlay"></div>
+                    <div className="item-text ">
+                      <h3>Commercial</h3>
+                      <h2>Benoit Architecture</h2>
+                      <span className="plus">
+                        <FontAwesomeIcon icon={faPlusSquare} className="plus" />
+                      </span>
+                    </div>
+                    <img src={require("../../assets/proj5.jpg")} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </>
   );
 };

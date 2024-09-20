@@ -52,7 +52,8 @@ h4 {
   color: #999;
   font-size: 12px;
 }
-.col-lg-6 {
+.col-lg-6,
+.col-lg-2 {
   padding: 0 !important;
 }
 
@@ -87,4 +88,123 @@ h3 {
 .about-us p {
   color: #999;
   font-size: 12px;
+}
+.services .item-img img {
+  height: 500px; /* Set a fixed height */
+  object-fit: cover;
+}
+.services .col-lg-2 {
+  position: relative;
+}
+.services .overlay {
+  background-color: #00215bd9;
+  position: absolute; /* or absolute depending on your layout */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10; /* Adjust as needed to stack above other elements */
+  opacity: 85%; /* Optional: Adjust opacity for transparency */
+}
+.services .overlay2 {
+  background-color: #d2153dd9;
+}
+.services .item-text,
+.services .item-arrow {
+  position: absolute;
+  z-index: 999;
+  padding: 20px;
+  color: #ffffff;
+}
+.services {
+  margin: 50px 0;
+}
+.services .item-text h3 {
+  font-weight: 700;
+  margin-top: 30px;
+  font-size: 25px;
+}
+.services .item-text p {
+  font-size: 14px;
+}
+.services .item-arrow {
+  font-size: 20px;
+  bottom: 10px;
+  right: 10px;
+  background: #d2153dd9;
+  padding: 10px 15px !important;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: #ffffff;
+}
+.services .item-arrow2 {
+  background: #00215bd9;
+}
+.services .item-arrow:hover {
+  transform: scale(1.1);
+  border-radius: 50px;
+}
+.projects .col-lg-4 {
+  padding: 0;
+}
+.projects .col-lg-4 .item img {
+  height: 630px;
+}
+.projects .item {
+  margin: 10px;
+  cursor: pointer;
+}
+.projects .item {
+  position: relative;
+}
+.projects .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #001ed3cc;
+  opacity: 85%;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.projects .item-text {
+  position: absolute;
+  z-index: 1000;
+  color: #ffffff;
+  font-size: 18px;
+  top: 80px;
+  right: 75px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.projects .item:hover .item-text,
+.projects .item:hover .overlay {
+  opacity: 1;
+}
+.projects .item-text h2 {
+  font-size: 25px;
+  text-align: center;
+}
+.projects .item-text h3 {
+  font-weight: 100;
+  text-align: center;
+}
+.projects .item-text .plus {
+  padding: 30px;
+  font-size: 50px;
+}
+.projects .project-text h2 {
+  font-size: 50px;
+  color: #000;
+  font-weight: 700;
+  margin: 30px 0;
+  letter-spacing: 3px;
+}
+.projects .project-text h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.projects {
+  margin: 120px 0;
 }
