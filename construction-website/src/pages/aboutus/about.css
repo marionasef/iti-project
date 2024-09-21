@@ -26,3 +26,15 @@
     height: 100%;
 
 }
+.second-section{
+    margin-bottom: 100px;
+}
+.card-pos{
+    bottom: -100px;
+
+}
+
+.third-section{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
