@@ -12,19 +12,19 @@ export default function Contacts() {
   return (
     <>
       <Navigation />
-      <Topimage text1="Contacts" text2="Home / Contacts" image={contactImage} />
+      <Topimage text1="Careers" text2="Home / Careers" image={contactImage} />
 
       <section className="form-section container  mb-5">
         <form className="row g-3">
           <div className="col-md-6">
             <label for="validationServer01" class="form-label">
-              First name
+             Full name
             </label>
             <input
               type="text"
               className="form-control is-valid"
               id="validationServer01"
-              value="Mark"
+              value="Monky d luffy"
               required
             />
             <div className="valid-feedback">Looks good!</div>
