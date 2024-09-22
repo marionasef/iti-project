@@ -15,9 +15,6 @@ function Navigation() {
             <a href="" className="text-decoration-none">
               partners
             </a>
-            <a href="" className="text-decoration-none">
-              careers
-            </a>
           </div>
           <div className="icons d-flex gap-3">
             <a href="">
@@ -126,7 +123,7 @@ function Navigation() {
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link className="navlinks pe-0">
-                <Link to="Contacts">Contacts</Link>
+                <Link to="Careers">Careers</Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

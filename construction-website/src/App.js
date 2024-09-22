@@ -9,6 +9,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,10 +24,13 @@ const router = createBrowserRouter([
     path: "Services",
     element: <Services/>
   },{
-    path: "Contacts",
+    path: "Careers",
     element: <Contacts/>
   },
 ]);
+ export  function apply(){
+  alert("thanks for apply")
+}
 
 function App() {
   return (
