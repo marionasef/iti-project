@@ -1,57 +1,57 @@
 import React from "react";
 import Navigation from "../../components/Navigation";
 import Topimage from "../../components/Topimage";
-import heroImage from "../../assets/services.jpg";
+import heroImage from "../../assets/tocover.jpg";
 import { Container , Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faPlusSquare } from "@fortawesome/free-solid-svg-icons";
-import "./ServiceArchive.css";
-import img1 from "../../assets/1.png";
-import img2 from "../../assets/2.jpg";
-import img3 from "../../assets/3.jpg";
-import img4 from "../../assets/4.jpg";
+import "./ToolsRent.css";
+import img1 from "../../assets/tools4.jpeg";
+import img2 from "../../assets/tool2.jpg";
+import img3 from "../../assets/tool3.jpg";
+import img4 from "../../assets/tool-cover.jpeg";
 import Footer from "../../components/Footer";
 
 
-const services = [
+const Tools = [
   {
     id: 1,
-    title: "Service One",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "bulldozer",
+    description: "45 $ per day .",
     imgSrc: img1,
   },
   {
     id: 2,
-    title: "Service Two",
+    title: "tool 2",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     imgSrc: img2,
   },
   {
     id: 3,
-    title: "Service Three",
+    title: "tool Three",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     imgSrc: img3,
   },
   {
     id: 4,
-    title: "Service Four",
+    title: "tool Four",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     imgSrc: img4,
   },
 ];
 
 
-export default function Services() {
+export default function ToolsRent() {
   return (
     <>
       <Navigation />
       <Topimage
-        text1="Services Archive"
+        text1="Tools Archive"
         image={heroImage}
-        text2="Home / Services Archive"/>
+        text2="Home / Tools Archive"/>
 
        < Container  className="service-container ">
-      {services.map((service, index) => (
+      {Tools.map((service, index) => (
         <Row
           className={`service-card mb-0 ${index % 2 === 0 ? "" : "reverse"}`}
           key={service.id}

@@ -8,6 +8,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import ToolsRent from "./pages/ToolsRent/ToolsRent";
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,9 @@ const router = createBrowserRouter([
   },{
     path: "Careers",
     element: <Contacts/>
+  },{
+    path: "Tools",
+    element: <ToolsRent/>
   },
 ]);
  export  function apply(){

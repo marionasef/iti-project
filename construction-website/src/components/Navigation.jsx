@@ -117,6 +117,8 @@ function Navigation() {
                 </NavDropdown.Item>
                 <NavDropdown.Item>
                   <Link to="/Services">Services </Link>
+                </NavDropdown.Item><NavDropdown.Item>
+                  <Link to="/Tools">Rent Tools</Link>
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="News" id="basic-nav-dropdown">
