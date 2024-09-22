@@ -1,9 +1,16 @@
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faPlusSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faCompass,
+  faMessage,
+  faPlusSquare,
+  faQuoteRight,
+} from "@fortawesome/free-solid-svg-icons";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Overlay } from "react-bootstrap";
+import { faPhone } from "@fortawesome/free-solid-svg-icons/faPhone";
 const Home = () => {
   const bgColors = {
     fisrtRed: "#d2153dd9",
@@ -96,7 +103,7 @@ const Home = () => {
                               alt=""
                             />
                           </span>
-                          <h4>Project Planning </h4>{" "}
+                          <h4>Project Planning </h4>
                         </div>
 
                         <p>
@@ -112,7 +119,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="about-us">
+      <section className="about-us my-5">
         <div className="container">
           <div className="row justify-content-center align-items-center">
             <div className="col-lg-5">
@@ -145,7 +152,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="services">
+      <section className="services my-5">
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6">
@@ -213,7 +220,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="projects">
+      <section className="projects my-5">
         <div className="container">
           <div className="project-text text-center">
             <h3>Our Works</h3>
@@ -292,6 +299,81 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="maps my-5">
+        <div className="map"></div>
+        <div className="container">
+          <div className="row justify-content-center align-items-center">
+            <div className="col-lg-3">
+              <div className="map-text">
+                <p>Company Address</p>
+                <h3>Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA</h3>
+              </div>
+            </div>
+            <div className="col-lg-3">
+              <div className="map-card  d-flex ">
+                <span>
+                  <FontAwesomeIcon icon={faPhone} />
+                </span>
+                <div className="card-text">
+                  <p>Company Phones</p>
+                  <h3>+ 1 234 5678 098</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3">
+              <div className="map-card blue-card d-flex ">
+                <span>
+                  <FontAwesomeIcon icon={faMessage} />
+                </span>
+                <div className="card-text">
+                  <p>Dustro Emails</p>
+                  <h3>dustro@gmail.com</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="clients my-5">
+        <div className="container ">
+          <div className="client-text text-center">
+            <p>Testimonials</p>
+            <h2>Our Clients Say</h2>
+          </div>
+          <div className="row justify-content-center align-items-center">
+            <div className="col-lg-3">
+              <div className="item-image">
+                <img src={require("../../assets/client.jpg")} alt="" />
+              </div>
+            </div>
+            <div className="col-lg-7">
+              <div className="item ">
+                <FontAwesomeIcon className="qoute" icon={faQuoteRight} />
+                <p>
+                  Suspendisse tortor enim, varius et porttitor sit amet, posuere
+                  vitae massa. Proin ac quam eu erat semper sagittis in vitae
+                  elit. Nam neque erat, semper vel ultrices in, finibus eu
+                  magna. Pellentesque habitant morbi tristique
+                </p>
+                <h3>Katy Grey </h3>
+                <article>CEO Grey Industries</article>
+                <svg
+                  width="64"
+                  height="14"
+                  viewBox="0 0 64 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="7" cy="7" r="7" fill="#001ED3" />
+                  <circle cx="34" cy="7" r="5" fill="#00215B" />
+                  <circle cx="59" cy="7" r="5" fill="#00215B" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="video my-5"></section>
       <Footer />
     </>
   );

@@ -42,6 +42,7 @@ p {
   border-top: 5px blue solid;
   padding: 20px;
 }
+
 .hero-text-footer-pos span {
   width: 50px;
 }
@@ -207,4 +208,73 @@ h3 {
 }
 .projects {
   margin: 120px 0;
+}
+.map {
+  background-position: center !important;
+  background-size: cover !important;
+  height: 585px;
+  background-image: url("../../assets/map.jpg");
+}
+.video {
+  background-position: center !important;
+  background-size: cover !important;
+  height: 585px;
+  background-image: url("../../assets/Video.jpg");
+}
+.maps .blue-card span {
+  background-color: blue !important;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 25px;
+}
+.map-text {
+  position: relative;
+  bottom: 100px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 10px 2px #999;
+  border-top: 5px red solid;
+  padding: 20px;
+}
+.maps .map-card span:first-child {
+  background-color: red;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 25px;
+}
+.maps .card-text h3 {
+  font-size: 14px;
+}
+.maps .card-text {
+  padding: 0 5px;
+}
+.maps .card-text p {
+  color: #999;
+}
+.clients .item-image {
+  padding: 15px;
+  box-shadow: 0px 2px 25px 0px #00215b35;
+}
+.clients .client-text h2 {
+  color: #000;
+  margin-bottom: 20px;
+}
+.clients .client-text p {
+  color: red;
+}
+.clients .qoute {
+  background-color: blue;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.clients .item p {
+  font-size: 15px;
+  color: #41444b;
+  line-height: 25px;
+  margin: 10px 0;
+}
+.clients .item article {
+  color: blue;
+  margin: 10px 0;
 }
