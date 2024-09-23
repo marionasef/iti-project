@@ -161,6 +161,7 @@ h3 {
 .projects .overlay {
   position: absolute;
   inset: 0;
+
   background-color: #001ed3cc;
   opacity: 85%;
   width: 100%;

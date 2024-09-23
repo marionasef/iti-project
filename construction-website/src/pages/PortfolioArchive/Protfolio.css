@@ -5,8 +5,8 @@
   transition: all 0.5s;
   opacity: 0;
 }
-.portfolio .item-text .plus {
-  padding: 0 2px;
+.portfolio .item-text .shap {
+  padding: 0 20px;
 }
 .portfolio .col-lg-3 {
   padding: 0 !important;

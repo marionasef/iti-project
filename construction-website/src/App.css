@@ -17,8 +17,17 @@
   font-size: 14px;
   color: var(--text-color);
 }
-.navlinks {
-  color: var(--blue);
+.navlinks a {
+  color: var(--blue) !important;
+  font-size: 18px;
+  padding: 10px;
+  transition: all 0.2s;
+}
+
+.navlinks a:hover {
+  text-transform: uppercase;
+  border-bottom: 5px solid var(--blue);
+  letter-spacing: 5px;
 }
 #basic-nav-dropdown {
   color: var(--blue);
@@ -45,6 +54,10 @@
 .row-adjust {
   width: 900px;
 }
+a {
+  text-decoration: none !important;
+  color: #000;
+}
 @media only screen and (max-width: 768px) {
   .right-footer {
     display: none;
@@ -56,7 +69,6 @@
     flex-direction: column;
     padding: 40px;
   }
-
 }
 @media only screen and (max-width: 1250px) {
   .right-footer .last-text {
@@ -84,7 +96,6 @@
   position: absolute;
   right: 160px;
   bottom: -250px;
-  
 }
 .cont-info {
   color: var(--blue);

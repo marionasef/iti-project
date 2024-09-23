@@ -4,42 +4,52 @@ import Home from "./pages/home/Home";
 import Portfolio from "./pages/PortfolioArchive/Portfolio";
 import Services from "./pages/ServicesArchive/Services";
 import Contacts from "./pages/contacts/Contacts";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
 import ToolsRent from "./pages/ToolsRent/ToolsRent";
+import SignUp from "./auth/signUp/SignUp";
+import LogIn from "./auth/Login/LogIn";
+import ProtectedRoute from "./routes/Auth.routes";
 
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>
-  },{
+    element: <Home />,
+  },
+  {
     path: "aboutus",
-    element: <AboutUs/>
-  },{
+    element: <ProtectedRoute element={<AboutUs />} />,
+  },
+  {
     path: "Portfolio",
-    element: <Portfolio/>
-  },{
+    element: <ProtectedRoute element={<Portfolio />} />,
+  },
+  {
     path: "Services",
-    element: <Services/>
-  },{
+    element: <ProtectedRoute element={<Services />} />,
+  },
+  {
     path: "Careers",
-    element: <Contacts/>
-  },{
+    element: <ProtectedRoute element={<Contacts />} />,
+  },
+  {
     path: "Tools",
-    element: <ToolsRent/>
+    element: <ProtectedRoute element={<ToolsRent />} />,
+  },
+  {
+    path: "login",
+    element: <LogIn />,
+  },
+  {
+    path: "signup",
+    element: <SignUp />,
   },
 ]);
- export  function apply(){
-  alert("thanks for apply")
-}
 
 function App() {
   return (
     <>
-     <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
   );
 }
