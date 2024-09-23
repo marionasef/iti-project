@@ -8,6 +8,7 @@ import ToolsRent from "./pages/ToolsRent/ToolsRent";
 import SignUp from "./auth/signUp/SignUp";
 import LogIn from "./auth/Login/LogIn";
 import ProtectedRoute from "./routes/Auth.routes";
+import SingleProject from "./pages/Single Project/SingleProject";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "aboutus",
     element: <ProtectedRoute element={<AboutUs />} />,
+  },
+  {
+    path: "SingleProject",
+    element:<SingleProject/> 
   },
   {
     path: "Portfolio",

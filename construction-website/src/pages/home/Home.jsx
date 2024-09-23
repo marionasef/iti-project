@@ -11,7 +11,11 @@ import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Overlay } from "react-bootstrap";
 import { faPhone } from "@fortawesome/free-solid-svg-icons/faPhone";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
+  const navigate=useNavigate();
+
+  
   const bgColors = {
     fisrtRed: "#d2153dd9",
     secondBlue: "#D2153DD9",
@@ -233,9 +237,11 @@ const Home = () => {
                 <div className="item-text ">
                   <h3>Commercial</h3>
                   <h2>Benoit Architecture</h2>
-                  <span className="plus">
+                  <a href="" onClick={()=> navigate("SingleProject")}>
+                  <span className="plus"  >
                     <FontAwesomeIcon icon={faPlusSquare} className="plus" />
                   </span>
+                  </a>
                 </div>
                 <img src={require("../../assets/proj1.jpg")} alt="" />
               </div>
