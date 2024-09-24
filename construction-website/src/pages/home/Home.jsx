@@ -44,18 +44,17 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="hero-footer">
+      <section className="hero-footer position-relative">
         <div className="container">
-          <div className="row align-items-center justify-content-center ">
-            <div className="col-lg-6 col-md-6 col-sm-12">
+          <div className="row align-items-center justify-content-center">
+            <div className="col-lg-7 col-md-8 col-sm-12">
               <div className="row">
                 <div className="col-lg-6 col-md-6 col-sm-12">
-                  <div className="hero-text-footer">
+                  <div className="hero-text-footer ">
                     <div className="d-flex">
                       <div className="hero hero-left">
                         <span>147</span>
-
-                        <p>Years of Expirience</p>
+                        <p>Years of Experience</p>
                       </div>
                       <div className="hero hero-right">
                         <span>25+</span>
@@ -65,53 +64,52 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">
-                  <div className="hero-text-footer-pos">
-                    <h3>We Construct and Manage Places and Infrastructures </h3>
+                  <div className="hero-text-footer-pos m-0">
+                    <h3>We Construct and Manage Places and Infrastructures</h3>
                     <ul>
                       <li>
-                        <div className="d-flex align-items-center ">
+                        <div className="d-flex align-items-center">
                           <span className="pe-2">
                             <img
                               src={require("../../assets/engineer.jpg")}
-                              alt=""
+                              alt="Engineer"
                             />
                           </span>
                           <h4>General Contract</h4>
                         </div>
                         <p>
                           Quisque condimentum erat ac orci blandit, in
-                          sollicitudin tellus vestibulum
+                          sollicitudin tellus vestibulum.
                         </p>
                       </li>
                       <li>
-                        <div className="d-flex align-items-center ">
+                        <div className="d-flex align-items-center">
                           <span className="pe-2">
                             <img
                               src={require("../../assets/measuring-tool.jpg")}
-                              alt=""
+                              alt="Measuring Tool"
                             />
                           </span>
-                          <h4>Project Engineering </h4>
+                          <h4>Project Engineering</h4>
                         </div>
                         <p>
                           Nullam commodo tincidunt nisl, nec vehicula dui
-                          interdum nec
+                          interdum nec.
                         </p>
                       </li>
                       <li>
-                        <div className="d-flex align-items-center ">
+                        <div className="d-flex align-items-center">
                           <span className="pe-2">
                             <img
                               src={require("../../assets/ruler.jpg")}
-                              alt=""
+                              alt="Ruler"
                             />
                           </span>
-                          <h4>Project Planning </h4>
+                          <h4>Project Planning</h4>
                         </div>
-
                         <p>
                           Sed vitae aliquet ipsum, ut ornare lectus. Proin sed
-                          sem risus. Sed nunc
+                          sem risus. Sed nunc.
                         </p>
                       </li>
                     </ul>
@@ -122,6 +120,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section className="about-us my-5">
         <div className="container">
           <div className="row justify-content-center align-items-center">
@@ -367,8 +366,7 @@ const Home = () => {
                   height="14"
                   viewBox="0 0 64 14"
                   fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <circle cx="7" cy="7" r="7" fill="#001ED3" />
                   <circle cx="34" cy="7" r="5" fill="#00215B" />
                   <circle cx="59" cy="7" r="5" fill="#00215B" />
