@@ -13,9 +13,8 @@ import { Overlay } from "react-bootstrap";
 import { faPhone } from "@fortawesome/free-solid-svg-icons/faPhone";
 import { useNavigate } from "react-router-dom";
 const Home = () => {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
-  
   const bgColors = {
     fisrtRed: "#d2153dd9",
     secondBlue: "#D2153DD9",
@@ -26,7 +25,7 @@ const Home = () => {
       <section className="heroSection mt-2">
         <div className="container">
           <div className="row align-items-center justify-content-between ">
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="hero-text">
                 <h1>Construction solution</h1>
                 <h2>for everyone</h2>
@@ -48,9 +47,9 @@ const Home = () => {
       <section className="hero-footer">
         <div className="container">
           <div className="row align-items-center justify-content-center ">
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-6 col-md-6 col-sm-12">
                   <div className="hero-text-footer">
                     <div className="d-flex">
                       <div className="hero hero-left">
@@ -65,7 +64,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 col-md-6 col-sm-12">
                   <div className="hero-text-footer-pos">
                     <h3>We Construct and Manage Places and Infrastructures </h3>
                     <ul>
@@ -159,7 +158,7 @@ const Home = () => {
       <section className="services my-5">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="item-img">
                 <img src={require("../../assets/img.jpg")} alt="" />
               </div>
@@ -237,10 +236,10 @@ const Home = () => {
                 <div className="item-text ">
                   <h3>Commercial</h3>
                   <h2>Benoit Architecture</h2>
-                  <a href="" onClick={()=> navigate("SingleProject")}>
-                  <span className="plus"  >
-                    <FontAwesomeIcon icon={faPlusSquare} className="plus" />
-                  </span>
+                  <a href="" onClick={() => navigate("SingleProject")}>
+                    <span className="plus">
+                      <FontAwesomeIcon icon={faPlusSquare} className="plus" />
+                    </span>
                   </a>
                 </div>
                 <img src={require("../../assets/proj1.jpg")} alt="" />
@@ -248,7 +247,7 @@ const Home = () => {
             </div>
             <div className="col-lg-7 text-center">
               <div className="row align-items-center justify-content-between">
-                <div className="col-lg-6">
+                <div className="col-lg-6 col-md-6 col-sm-12">
                   <div className="item">
                     <div className="overlay"></div>
                     <div className="item-text ">
@@ -261,7 +260,7 @@ const Home = () => {
                     <img src={require("../../assets/proj2.jpg")} alt="" />
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 col-md-6 col-sm-12">
                   <div className="item">
                     <div className="overlay"></div>
                     <div className="item-text ">
@@ -274,7 +273,7 @@ const Home = () => {
                     <img src={require("../../assets/proj3.jpg")} alt="" />
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 col-md-6 col-sm-12">
                   <div className="item item1 ">
                     <div className="overlay"></div>
                     <div className="item-text ">
@@ -287,7 +286,7 @@ const Home = () => {
                     <img src={require("../../assets/proj4.jpg")} alt="" />
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 col-md-6 col-sm-12">
                   <div className="item">
                     <div className="overlay"></div>
                     <div className="item-text ">

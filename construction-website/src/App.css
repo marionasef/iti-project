@@ -69,11 +69,28 @@ a {
     flex-direction: column;
     padding: 40px;
   }
-  .contact-card{
+  .contact-card {
     display: none;
   }
 }
 @media only screen and (max-width: 1250px) {
+  .hero-text {
+    padding: 50px;
+  }
+  .hero-text h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px !important;
+  }
+  .hero-text-footer-pos {
+    width: 70%;
+    margin: auto;
+    top: 20px;
+  }
+  .hero-text-footer {
+    margin: 20px 65px;
+  }
   .right-footer .last-text {
     display: none;
   }
