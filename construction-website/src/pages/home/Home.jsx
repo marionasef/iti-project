@@ -12,9 +12,9 @@ import Footer from "../../components/Footer";
 import { Overlay } from "react-bootstrap";
 import { faPhone } from "@fortawesome/free-solid-svg-icons/faPhone";
 import { useNavigate } from "react-router-dom";
+
 const Home = () => {
   const navigate = useNavigate();
-
   const bgColors = {
     fisrtRed: "#d2153dd9",
     secondBlue: "#D2153DD9",
